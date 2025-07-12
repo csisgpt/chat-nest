@@ -1,0 +1,14 @@
+{
+  "name": "chat-nest",
+  "version": "0.0.1",
+  "description": "Scalable real-time chat backend",
+  "private": true,
+  "scripts": {
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "build": "nest build"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
+
