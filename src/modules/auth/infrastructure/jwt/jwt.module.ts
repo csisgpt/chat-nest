@@ -8,8 +8,8 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
       imports: [ConfigModule],
       inject: [ConfigService],
       useFactory: async (config: ConfigService) => ({
-        secret: config.get<string>('jwtSecret'),
-        signOptions: { expiresIn: config.get<string>('jwtExpiresIn') },
+        secret: config.get<string>('jwt.secret'),
+        signOptions: { expiresIn: config.get<string>('jwt.accessTokenTtl') },
       }),
     }),
   ],
