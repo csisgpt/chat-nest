@@ -1,7 +1,7 @@
-export class Message {
-  id: string;
+export interface Message {
+  id: number;
   content: string;
-  userId: string;
+  senderId: number;
   createdAt: Date;
 }
 
